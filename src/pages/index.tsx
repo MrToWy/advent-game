@@ -109,7 +109,7 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
 		// 👇 https://github.com/makenotion/notion-sdk-js/issues/154
 		const sequenceData: any = results[0];
 
-		sequence = sequenceData.properties.Sequence.title[0].text.content
+		sequence = sequenceData.properties.Sequence.rich_text[0].text.content
 			.split("")
 			.map((x: string) => Number(x));
 		gameNumber = sequenceData.properties.Number.number;
@@ -132,7 +132,7 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
 					},
 				},
 				Sequence: {
-					title: [
+					rich_text: [
 						{
 							text: {
 								content: sequence.join(""),
