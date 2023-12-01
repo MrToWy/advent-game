@@ -42,7 +42,7 @@ export const ResultsModal = ({ gameNumber }: ResultsModalProps) => {
 			<ModalContent padding={6}>
 				<VStack spacing={4}>
 					<Heading fontSize="lg">
-						{won ? "You won!" : "Not this time..."}
+						{won ? "Sehr gut!" : "Ups..."}
 					</Heading>
 
 					{/* General stats */}
@@ -127,7 +127,7 @@ export const ResultsModal = ({ gameNumber }: ResultsModalProps) => {
 						rel="noreferrer"
 						leftIcon={<SiTwitter />}
 					>
-						Share on Twitter
+						Auf Twitter teilen
 					</Button>
 				</VStack>
 			</ModalContent>
