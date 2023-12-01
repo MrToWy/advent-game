@@ -22,13 +22,6 @@ export const Keyboard = () => {
 					</KeyboardButton>
 				))}
 			</HStack>
-			<HStack spacing={2}>
-				{[6, 7, 8, 9, 0].map((n) => (
-					<KeyboardButton key={n} onClick={() => onNumberClick(n)}>
-						{n}
-					</KeyboardButton>
-				))}
-			</HStack>
 			<HStack width="100%">
 				<KeyboardButton onClick={onBackspaceClick}>
 					<BsBackspaceFill />
