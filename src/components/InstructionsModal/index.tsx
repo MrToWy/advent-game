@@ -60,6 +60,8 @@ export const InstructionsModal = ({
 
 					<Text fontSize="sm">Liebe Grüße</Text>
 					<Text fontSize="sm">Tobi</Text>
+
+					<Text fontSize="sm">Ps: Wundere dich nicht: Auf den Keyboard-Buttons stehen die Tage des Monats (wie auf den Karten), wenn du die drückst wird jedoch eingefügt, der wievielte Tag in der Woche das ist :D Das soll so.</Text>
 				</VStack>
 			</ModalContent>
 		</Modal>
