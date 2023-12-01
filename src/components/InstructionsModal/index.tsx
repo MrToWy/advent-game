@@ -23,14 +23,18 @@ export const InstructionsModal = ({
 			<ModalOverlay />
 			<ModalContent padding={6}>
 				<VStack spacing={2} alignItems="flex-start">
-					<Heading fontSize="lg">Instructions</Heading>
+					<Heading fontSize="lg">Liebe Phie</Heading>
 
 					<Text fontSize="sm">
-						Find the correct sequence of numbers in 5 tries.
+						du magst Rätsel und Musik und heute beginnt der Monat Dezember. Das ist die perfekte Gelegenheit für einen Adventskalender der das alles kombiniert.
 					</Text>
 					<Text fontSize="sm">
-						After each attempt, the color of the number will tell
-						you how close of the solution you are.
+						Ich hoffe er gefällt dir.
+					</Text>
+
+
+					<Text fontSize="sm">
+						Nachdem du 5 Songkarten gesammelt hast, befolge die Aufgabe oben auf der Seite & gebe die Lösung ein. Ähnlich wie bei Wordle, wird dir angezeigt, ob du richtig liegst.
 					</Text>
 
 					<HStack>
@@ -42,34 +46,20 @@ export const InstructionsModal = ({
 					</HStack>
 
 					<Text fontSize="sm">
-						At the above example, the number <strong>1</strong> is
-						part of the sequence and is in the right place. Which
-						means that the sequence begins with <strong>1</strong>.
+						Viel Spaß und sag Bescheid wenn du einen Tipp brauchst. Ich gehe aber fest davon aus, dass jedes Rätsel beim ersten Versuch so aussehen wird:
 					</Text>
+
 
 					<HStack>
-						<FakeInput value={3} status="incorrect" />
-						<FakeInput value={4} status="incorrect" />
-						<FakeInput value={1} status="incorrect" />
-						<FakeInput value={8} status="partial" />
-						<FakeInput value={5} status="incorrect" />
+						<FakeInput value={3} status="correct" />
+						<FakeInput value={4} status="correct" />
+						<FakeInput value={1} status="correct" />
+						<FakeInput value={2} status="correct" />
+						<FakeInput value={5} status="correct" />
 					</HStack>
 
-					<Text fontSize="sm">
-						At the above example, the number <strong>8</strong>{" "}
-						belongs to the sequence but is not in the right place.
-					</Text>
-
-					<Text fontSize="sm">
-						The numbers in red do not belong to the sequence.
-					</Text>
-
-					<Text fontSize="sm">
-						<strong>The sequence does not repeat numbers!</strong>{" "}
-						Each sequence is formed by 5 distinct numbers.
-					</Text>
-
-					<Text fontSize="sm">New day, new sequence.</Text>
+					<Text fontSize="sm">Liebe Grüße</Text>
+					<Text fontSize="sm">Tobi</Text>
 				</VStack>
 			</ModalContent>
 		</Modal>
