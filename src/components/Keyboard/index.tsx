@@ -30,7 +30,7 @@ export const Keyboard = () => {
 					full
 					onClick={isGameOver ? showResults : onSubmit}
 				>
-					{isGameOver ? "Show Results" : "Enter"}
+					{isGameOver ? "Absenden" : "Enter"}
 				</KeyboardButton>
 			</HStack>
 		</VStack>
