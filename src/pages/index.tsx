@@ -65,7 +65,7 @@ const Home = ({ gameNumber, sequence }: HomeProps) => {
 
 			<VStack padding={4} spacing={4}>
 				<Heading textAlign="center" fontSize="2xl">
-					Sequence #{gameNumber}
+					{gameNumber}
 				</Heading>
 
 				<GameBoard />
@@ -112,7 +112,7 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
 		sequence = sequenceData.properties.Sequence.rich_text[0].text.content
 			.split("")
 			.map((x: string) => Number(x));
-		gameNumber = sequenceData.properties.Number.number;
+		gameNumber = sequenceData.properties.Number.rich_text[0].text.content;
 	} else {
 		sequence = createSequence();
 		gameNumber = dayjs(today).diff(DAY_ONE, "day") + 1;
@@ -122,7 +122,13 @@ export const getServerSideProps: GetServerSideProps<HomeProps> = async () => {
 			parent: { database_id: databaseId },
 			properties: {
 				Number: {
-					number: gameNumber,
+					rich_text: [
+						{
+							text: {
+								content: gameNumber.toString(),
+							},
+						},
+					],
 				},
 				Date: {
 					date: {
