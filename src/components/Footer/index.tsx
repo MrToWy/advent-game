@@ -4,7 +4,7 @@ import { SiChakraui, SiNotion, SiNextdotjs } from "react-icons/si";
 export const Footer = () => {
 	return (
 		<VStack padding={4} w="full">
-			<Text fontSize="xs">Developed with ❤️ and </Text>
+			<Text fontSize="xs">Developed for Phie </Text>
 			<HStack>
 				<SiChakraui />
 				<SiNotion />
@@ -18,6 +18,13 @@ export const Footer = () => {
 					target="_blank"
 				>
 					heyralfs
+				</Link> and {" "}
+				<Link
+					href="https://github.com/MrToWy"
+					textDecor="underline"
+					target="_blank"
+				>
+					Tobi
 				</Link>
 			</Text>
 		</VStack>
