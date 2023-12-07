@@ -21,7 +21,7 @@ export function generateTweet(
 		})
 		.join("\n");
 
-	return ` #${gameNumber} ${
-		won ? `✌️ ${validAttempts.length}/5` : "☠️"
+	return `${gameNumber} ${
+		won ? `${validAttempts.length}/5` : "☠️"
 	}\n\n${resultsInEmojis}\n\nadvent.tobii.uber.space`;
 }
