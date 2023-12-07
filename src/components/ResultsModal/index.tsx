@@ -42,7 +42,7 @@ export const ResultsModal = ({ gameNumber }: ResultsModalProps) => {
 			<ModalContent padding={6}>
 				<VStack spacing={4}>
 					<Heading fontSize="lg">
-						{won ? "Sehr gut!" : "Ups..."}
+						{won ? "Sehr gut Phie!" : "Ups..."}
 					</Heading>
 
 					{/* General stats */}
@@ -118,16 +118,9 @@ export const ResultsModal = ({ gameNumber }: ResultsModalProps) => {
 					</VStack>
 
 					<Button
-						as="a"
-						colorScheme="twitter"
-						href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(
-							tweet
-						)}`}
-						target="_blank"
-						rel="noreferrer"
-						leftIcon={<SiTwitter />}
+					onClick={() => navigator.clipboard.writeText(tweet)}
 					>
-						Auf Twitter teilen
+						Teilen
 					</Button>
 				</VStack>
 			</ModalContent>

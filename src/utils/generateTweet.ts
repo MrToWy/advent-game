@@ -21,7 +21,7 @@ export function generateTweet(
 		})
 		.join("\n");
 
-	return `I just played The Sequence Game #${gameNumber} ${
+	return ` #${gameNumber} ${
 		won ? `✌️ ${validAttempts.length}/5` : "☠️"
-	}\n\n${resultsInEmojis}\n\nthesequencegame.vercel.app`;
+	}\n\n${resultsInEmojis}\n\nadvent.tobii.uber.space`;
 }
